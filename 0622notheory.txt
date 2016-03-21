@@ -1,0 +1,15 @@
+class strnk
+{
+publick:
+  strnk();
+  strnk(const strnk& obj);
+  const char* get()const;
+private:
+  unsigned int dlinna;
+  char* simvol;
+}
+
+strnk():dlinna(0),simvol(nullptr){};
+strnk(const strnk& obj):dlinna(obj.dlinna){
+simvol = new char[strlen(obj.simvol)];
+strcpy(simvol,obj.simvol)}

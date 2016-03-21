@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPupilsGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PupilsGroup>
+    <name>P11014</name>
+    <pupils>
+      <Pupil PupilID="0">
+        <name>Oleg</name>
+      </Pupil>
+      <Pupil PupilID="1">
+        <name>Olya</name>
+      </Pupil>
+      <Pupil PupilID="2">
+        <name>Andrew</name>
+      </Pupil>
+      <Pupil PupilID="3">
+        <name>Tupica</name>
+      </Pupil>
+    </pupils>
+  </PupilsGroup>
+</ArrayOfPupilsGroup>

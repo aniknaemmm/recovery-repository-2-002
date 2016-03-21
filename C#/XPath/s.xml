@@ -1,0 +1,26 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html"/>
+
+  
+<xsl:template match="/">
+<h1><xsl:value-of select="document('lessons.xml')" /> </h1>
+
+
+    <h2>Totals</h2>
+    <table border="2" cellSpacing="2" cellPadding="5" >
+        <tr bgcolor="#9acd32">
+            <th>Test Name</th>
+            <th>Total Passed</th>
+            <th>Total Failed</th>
+        </tr>
+		<xsl:for-each select="/ArrayOfPupilsGroup/PupilsGroup/pupils/Pupil">
+			<tr>
+				<td><xsl:value-of select="../../name"/></td>
+				<td><xsl:value-of select="name"/></td>
+				<td><xsl:value-of select="document('lessons.xml')/ArrayOfLesson/Lesson/@nameGr"/></td>
+			</tr>
+        </xsl:for-each>
+    </table>
+</xsl:template>
+
+</xsl:stylesheet>

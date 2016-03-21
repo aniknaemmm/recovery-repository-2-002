@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLesson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lesson teacherID="0" nameGr="P11014">
+    <topic>firstTopic</topic>
+    <marks>
+      <Mark>
+        <value>10</value>
+        <pupilID>0</pupilID>
+        <teacherID>0</teacherID>
+        <for_what>home work</for_what>
+      </Mark>
+      <Mark>
+        <value>10</value>
+        <pupilID>1</pupilID>
+        <teacherID>0</teacherID>
+        <for_what>class work</for_what>
+      </Mark>
+      <Mark>
+        <value>10</value>
+        <pupilID>2</pupilID>
+        <teacherID>0</teacherID>
+        <for_what>good actions</for_what>
+      </Mark>
+      <Mark>
+        <value>10</value>
+        <pupilID>3</pupilID>
+        <teacherID>0</teacherID>
+        <for_what>home work</for_what>
+      </Mark>
+    </marks>
+  </Lesson>
+  <Lesson teacherID="1" nameGr="P11014">
+    <topic>firstTopic</topic>
+    <marks>
+      <Mark>
+        <value>10</value>
+        <pupilID>0</pupilID>
+        <teacherID>1</teacherID>
+        <for_what>home work</for_what>
+      </Mark>
+      <Mark>
+        <value>10</value>
+        <pupilID>1</pupilID>
+        <teacherID>1</teacherID>
+        <for_what>class work</for_what>
+      </Mark>
+      <Mark>
+        <value>10</value>
+        <pupilID>2</pupilID>
+        <teacherID>1</teacherID>
+        <for_what>good actions</for_what>
+      </Mark>
+      <Mark>
+        <value>10</value>
+        <pupilID>3</pupilID>
+        <teacherID>1</teacherID>
+        <for_what>home work</for_what>
+      </Mark>
+    </marks>
+  </Lesson>
+</ArrayOfLesson>

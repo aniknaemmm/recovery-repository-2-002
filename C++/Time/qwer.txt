@@ -1,0 +1,2 @@
+element ; list push;list sort;vector push ; vector sort ; map push; map select ; hash push ; hash select ;
+4096;11 ;257 ;3 ;13 ;166 ;26 ;222 ;68 

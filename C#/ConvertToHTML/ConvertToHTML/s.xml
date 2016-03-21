@@ -1,0 +1,30 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<script language="javascript" type="text/javascript" src="jquery-2.1.4.js">
+          <xsl:text> </xsl:text>
+        </script>
+        <script language="javascript" type="text/javascript" src="code.js">
+          <xsl:text> </xsl:text>
+        </script>
+
+    <h2 id="my">Totals</h2>
+    <table border="2" cellSpacing="2" cellPadding="5" >
+        <tr bgcolor="#9acd32">
+            <th>Test Name</th>
+            <th>Total Passed</th>
+            <th>Total Failed</th>
+        </tr>
+		<xsl:for-each select="/ArrayOfPupilsGroup/PupilsGroup/pupils/Pupil">
+			<tr>
+				<td ><xsl:value-of select="../../name"/></td>
+				<td><xsl:value-of select="name"/></td>
+				<td><xsl:value-of select="document('lessons.xml')/ArrayOfLesson/Lesson/@nameGr"/></td>
+			</tr>
+        </xsl:for-each>
+    </table>
+
+</xsl:template>
+
+</xsl:stylesheet>

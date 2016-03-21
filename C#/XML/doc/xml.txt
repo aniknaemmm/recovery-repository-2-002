@@ -1,0 +1,44 @@
+using System;
+using System.Xml;
+class MyApp
+{
+    static void displayNode(XmlNode node, int level = 0)
+    {
+
+        if (node.NodeType == XmlNodeType.Element)
+        {
+            Console.Write(new String(' ',level)+ node.Name);
+            foreach (XmlAttribute a in node.Attributes)
+            {
+                Console.Write(" {0}='{1}'", a.Name, a.Value);
+            }
+            Console.WriteLine();
+        }
+        if (node.NodeType == XmlNodeType.Text )
+        {
+            Console.WriteLine(new String(' ', level) + '*'+ node.Value+'*');
+        }
+
+
+        foreach (XmlNode child in node.ChildNodes)
+        {
+            displayNode(child, level + 1);
+        }
+    }
+
+
+    static void Main()
+    {
+        XmlDocument doc = new XmlDocument();
+        doc.Load(@"C:\Users\prepod7\ReadXml\Cars.xml");
+        XmlNode root = doc.ChildNodes[1];
+        displayNode(root);
+
+        /*        XmlNodeList nodes = doc.GetElementsByTagName("Car");
+                foreach (XmlNode node in nodes)
+                {
+                    Console.WriteLine("{0} {1}", node["Manufactured"].InnerText,
+                    node["Model"].InnerText);
+                }*/
+    }
+}
